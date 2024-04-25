@@ -9,19 +9,18 @@ import org.springframework.web.servlet.resource.PathResourceResolver;
 
 @Configuration
 @EnableConfigurationProperties(KnoteProperties.class)
-public class KnoteConfig implements WebMvcConfigurer{
+public class KnoteConfig implements WebMvcConfigurer {
 
-    @Autowired
-    private KnoteProperties properties;
+	@Autowired
+	private KnoteProperties properties;
 
-    @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry
-                .addResourceHandler("/uploads/**")
-                .addResourceLocations("file:" + properties.getUploadDir())
-                .setCachePeriod(3600)
-                .resourceChain(true)
-                .addResolver(new PathResourceResolver());
-    }
+	@Override
+	public void addResourceHandlers(ResourceHandlerRegistry registry) {
+		registry.addResourceHandler("/uploads/**")
+			.addResourceLocations("file:" + properties.getUploadDir())
+			.setCachePeriod(3600)
+			.resourceChain(true)
+			.addResolver(new PathResourceResolver());
+	}
 
 }
