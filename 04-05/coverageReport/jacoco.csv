@@ -1,0 +1,6 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+knote,com.learnk8s.knote.Controller,KnoteController,147,0,24,0,33,0,18,0,6,0
+knote,com.learnk8s.knote.UploadConfig,KnoteProperties,6,0,0,0,2,0,2,0,2,0
+knote,com.learnk8s.knote.UploadConfig,KnoteConfig,32,0,0,0,8,0,2,0,2,0
+knote,com.learnk8s.knote.Note,Note,19,10,0,0,3,3,4,3,4,3
+knote,com.learnk8s.knote,KnoteApplication,8,0,0,0,3,0,2,0,2,0
